@@ -21,13 +21,13 @@ Transformers exhibit distinctive **alloy-like characteristics**, where **diverse
 By measuring the average sharpness for each block type using Hessian approximation, we uncover a clear sharpness disparity across above blocks (see Figure left): 
 
 $$ 
-\mathcal{S}(Emb) ≪ \mathcal{S}(QK) < \mathcal{S}(FFN) < \mathcal{S}(VO) ≪ \mathcal{S}(Norm) 
+\mathcal{S}(\textnormal{\textsf{Emb}}) ≪ \mathcal{S}(\textnormal{\textsf{QK}}) < \mathcal{S}(\textnormal{\textsf{FFN}}) < \mathcal{S}(\textnormal{\textsf{VO}}) ≪ \mathcal{S}(\textnormal{\textsf{Norm}}) 
 $$
 
 This disparity emerges early and persists throughout training.
 
 <p align="center">
-<img src="imgs/sharpness.png" width="70%" />
+<img src="imgs/sharpness.png" width="60%" />
 </p>
 <p align="center">
 <em> Figure. (left) The average sharpness for the five  typical block types in a pre-trained LLaMA model (0.25B) ; (right) the sharpness distribution across different blocks in a pre-trained GPT-2 (small) model.</em>
@@ -97,21 +97,16 @@ LR in pre-training LLaMA (0.25B) on OpenWebText.</em>
 <p align="center">
   <img
   src="imgs/scaling_law.png"
-  alt="The beautiful MDN logo." width=50%>
-</p>
-<p align="center">
-<em>Figure. Scaling law on C4</em>
-</p>
-
-
-<p align="center">
+  alt="The beautiful MDN logo." width=29%>
   <img
   src="imgs/scaling_law2.jpg"
-  alt="The beautiful MDN logo." width=50%>
+  alt="The beautiful MDN logo." width=30%>
 </p>
 <p align="center">
-<em>Figure. Scaling law on OpenWebText (with fixed training tokens)</em>
+<em>Figure. Scaling law on C4 (under Chinchilla setting); Scaling law on OpenWebText (with fixed training tokens)</em>
 </p>
+
+
 
 ## Citation
 
